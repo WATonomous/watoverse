@@ -22,5 +22,12 @@ def list_mcap() -> list[dict]:
 @router.get("")
 def get_mcap():
     return list_mcap()
+
+@router.post("/{id}/process")
+def process_mcap(id: str):
+    # Implementation for processing mcap file
+    pass
+
+
         
     
