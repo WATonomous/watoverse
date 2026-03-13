@@ -160,6 +160,7 @@ def process_mcap(id: str, max_frames: int | None = None):
             "output_dir": str(run_dir),
             "index_path": str(index_path),
         }
+    
     except HTTPException:
         raise
     except ValueError as e:
