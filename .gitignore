@@ -1,1 +1,7 @@
 data/
+src/backend/info.txt
+src/backend/structure.txt
+__pycache__/
+*.pyc
+.venv/
+venv/
