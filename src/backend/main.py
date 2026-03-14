@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.mcap import router as mcap_router
+from backend.labeling import router as labeling_router
 
 
 app = FastAPI()
@@ -18,4 +19,5 @@ def health_check():
     return {"status": "ok"}
 
 app.include_router(mcap_router)
+app.include_router(labeling_router)
 
